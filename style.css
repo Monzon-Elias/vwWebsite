@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body{
+    margin: 0px;
+    font-size: 1.5em;
+    background-color: #1b1b1b;
+    font-family: 'Abel', sans-serif;
+    text-align: justify;
+}
+header{
+    text-align: center;
+}
+header img{
+    margin-top: 50px;
+    
+}
+#topbox{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #434343;
+    box-shadow: 5px 5px 10px;
+}
+main{
+    padding-top: 60px;
+    background-color: #ea5b0c; 
+    border: 5px solid #434343;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.grid{
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+}
+.texts{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 86%;
+    margin: auto;
+    text-shadow: 2px 2px 1px black;
+}
+
+main img{
+    box-shadow: 5px 5px 10px;
+    flex-grow: 1;
+    border: 1px solid black;
+    height: 150px;
+}
+
+/* TEXT COLOR */
+
+p, blockquote, figcaption, h1, h2, h3, h4, h5{
+    color: aliceblue;
+}
+
+/* NAV STYLE */
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav{
+    text-shadow: 2px 2px 1px black;
+    font-weight: bold;
+    background-image: linear-gradient(#434343, #1b1b1b);
+    border: 2px solid #1b1b1b;
+    box-shadow: 5px 5px 10px black;
+}
+nav a:link{
+    color: #fefcfc;
+}
+nav a:visited{
+    color: #35fd1a;
+}
+nav a:hover{
+    color: #f5fe08;
+}
+nav a:active{
+    color: #d0d1c0;
+}
+nav a:link{
+    text-decoration: none;
+}
+li a.active{
+    color: #d0d1c0;
+}
+footer{
+    font-size: .8em;
+}
+footer nav{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+footer div{
+    background-color: #313131;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div p{
+    display: inline;
+}
+
+/* ABOUT PAGE STYLE */
+
+.grid-container{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-gap: 5px;
+}
+.grid-container figure{
+    margin-top: 45px;
+}
+.grid-container figure img{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+p, h1{
+    text-shadow: 2px 2px 1px black;
+}
+h2, h3, h4, h5{
+    text-shadow: 1px 2px 1px black;
+}
+.col1 img:last-child{
+    box-shadow: none;
+}
+/* CONTACT FORM STYLE */
+
+form h2{
+    text-align: center;
+    margin-bottom: -20px;
+}
+form{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    color: aliceblue;
+}
+form fieldset{
+    background-image: url(images/spiration%20dark.png);
+    border-radius: 5px;
+    width: 600px;
+    margin: auto;
+} 
+
+/* SPACE BETWEEN THE FIELDSETS */
+
+form fieldset:last-child{
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+form input{
+    font-family: inherit;
+    font-size: 1em;
+    margin: 10px auto;
+}
+form input[type="checkbox"]{
+    cursor: pointer;
+}
+#button {
+    background-color: #ea5b0c;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: inherit;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+#button:active {
+    background: green;
+}
+
+/* HIGH END STYLE */
+
+.pictures{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.pictures img{
+    margin: 5px;
+    border: none;
+}
+.pictures img:hover {box-shadow: 8px 8px 10px black;}
+
+.figure{
+    height: 300px;
+    width: inherit;
+}

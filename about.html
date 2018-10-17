@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>
+            Air - Cooled | About-Contact Page
+        </title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="About-Contact Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="images/favicon.ico" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="images/newLogo.png" alt="logo"/>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="highEnd.html">High-End</a></li>
+                <li><a href="lowEnd.html">Low-End</a></li>
+                <li><a href="tonellaHiggins.html">Tonella - Higgins</a></li>
+                <li><a href="myPath.html">My Path</a></li>
+                <li><a class="active" href="#">About - Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="grid-container">
+                <!-- ABOUT ME INFO -->
+                    <div class="col1">
+                        <figure>
+                            <img src="images/foto-de-curriculum.jpg"/>
+                            <figcaption>
+                                <p>Hi, <br />My name is Elías Monzón, I was born and grew up in Uruguay, a small country in the southern cone of Latin America.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/tonella-small-logo.png"/>
+                        </figure>
+                    </div>
+                <!-- WEBSITE PURPOSE INFO -->
+                <section>
+                    <div class="text">
+                        <h1>About this website</h1>
+                        <h4>The purpose of this web site is to share my satisfaction for having lived a very interesting, and totally self-taught experience with the Volkswagen air-cooled mechanics. This experience has served me as a mind sanitizer in a tough period of my life.</h4>
+                        <h3>About my experience</h3>
+                        <p>My learning experience was from mainly from videos that taught the know-how of many repairs to a VW air-cooled. My practical experience was in my own car when I applied all I was learning. All this, born from the need to make my own repairs, for lack of money and time to take my car to the mechanic. 
+                        </p>
+                        <h3>My sources</h3>
+                        <p>Tonella and Higgins are my two main virtual mentors who taught me everything I needed to start gaining my own experience and knowledge about the wonderful VW air-cooled. Thanks to them, I have learned to do most of the repairs in all the systems of my beetles. I think about 80% of everything I know now.
+                        </p>
+                        <h3>Historic glimpse</h3>
+                        <p>I also share a brief glimpse of the main car models that Volkswagen has produced under the air-cooled philosophy. These are divided into high-end and low-end models.</p>
+                    </div>
+                </section>
+                <!-- IMAGES COLUMN -->
+                <aside>
+                    <div class="col3">
+                        <figure>
+                            <img src="images/man-and-beetle-web.jpg" alt="man under his beetle"/>
+                        </figure>
+                        <figure>
+                            <img src="images/motorBolaDeFogo.JPG" alt="burned motor"/>
+                        </figure>
+                        <figure>
+                            <img src="images/engine%20core.JPG" alt="motor assembling"/>
+                        </figure>
+                        <figure>
+                            <img src="images/tonellaCrankshaft.JPG" alt="Tonella with a crankshaft"/>
+                        </figure>
+                    </div>
+                </aside>
+            </div>  
+        </main>
+        <!-- CONTACT FORM -->
+        <form>
+            <h2>Contact me</h2>
+            <!-- ABOUT YOU -->
+            <fieldset>
+                <legend>
+                    <h3>About you</h3>
+                </legend>
+                <label>
+                    Full Name:
+                </label>
+                    <input type="text" name="name" size="30" minlength="5" pattern="[a-zA-Z]+" title="Please, use only Alpha caracters" required>
+                <br />
+                <label>
+                    Email:
+                </label>
+                    <input type="email" name="email" size="30" placeholder="example@gmail.com" title="Your email" required>
+                <br />
+                <label>
+                    Zip Code:
+                </label>
+                <input type="number" name="zipc" max="999999" title="Please, set your zip code" required>
+                <br />
+            </fieldset>
+            <br />
+            <!-- ABOUT YOUR CAR -->
+            <fieldset>
+                <legend>
+                    <h3>About your VW</h3>
+                </legend>
+                <label>
+                    Year:
+                </label>
+                <input type="number" name="year" min="1936" max="2006" title="Please, set a year from 1936 to 2006" required>
+                <br />
+                <label>
+                    Model:
+                </label>
+                <input list="models" name="model" placeholder="Select your VW model">
+                <datalist id="models">
+                    <option value="Beetle">
+                    <option value="Type 2">
+                    <option value="Type 3">
+                    <option value="Type 4">
+                    <option value="Karman Ghia">
+                    <option value="SP2">
+                    <option value="Brasilia">
+                    <option value="VW 1600 (Zé do caixao)">
+                    <option value="Puma">
+                    <option value="Gol">
+                    <option value="Golf">
+                    <option value="Other">
+                </datalist>
+                <br />
+                <br />
+                <div>
+                    <label>
+                        Want to receive content update notifications by email?
+                    </label>
+                    <br />
+                    <label>
+                        Yes
+                    </label>
+                    <input type="checkbox" name="yes" value="yes" checked>
+                </div>
+                <br />
+                <label>
+                    Comments:
+                </label>
+                <br />
+                <textarea rows="4" cols="40" id="comments"></textarea>
+                <br />
+                <br />
+                <button type="button" id="button">Send your info</button>
+            </fieldset>
+        </form>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="highEnd.html">High-End</a></li>
+                    <li><a href="lowEnd.html">Low-End</a></li>
+                    <li><a href="tonellaHiggins.html">Tonella - Higgins</a></li>
+                    <li><a href="myPath.html">My Path</a></li>
+                    <li><a class="active" href="#">About-Contact</a></li>
+                    <li><a href="//eliashowsyou.com/comm310website/styleguide/styleguide.html">Style Guide</a></li>
+                    <li><a href="//eliashowsyou.com/comm310website/practice/index.html">Practice</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+        <script src="currentDate.js"></script>
+    </body>
+</html>
