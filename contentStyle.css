@@ -187,22 +187,17 @@ section img{
 
 .myBeetles{
     display: flex;
-    flex-flow: row nowrap;
 }
 .myBeetles figure:last-child{
     margin-left: 5px;   
 }
-.myBeetles figure{
-    width: 50%;
-}
+
 
 /* TONELLA-HIGGINS STYLE */
- 
-.tonhig figcaption, .tonhig img{
-    width: 100%;
-    height: auto;
+.tonhig img {
+    width: 100%; 
+    height: fit-content;
 }
-
 #text1{
     background-image: url(images/tonella-small-logo.png);
 }
@@ -243,5 +238,8 @@ footer div p{
     nav ul {
         flex-direction: column;
         text-align: center;
+    }
+    .myBeetles{
+        flex-direction: column;
     }
   }
