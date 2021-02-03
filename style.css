@@ -41,13 +41,13 @@ main{
 .texts{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 86%;
     margin: auto;
     text-shadow: 2px 2px 1px black;
 }
 
-main img{
+.grid img{
     box-shadow: 5px 5px 10px;
     flex-grow: 1;
     border: 1px solid black;
@@ -121,7 +121,7 @@ footer div p{
     margin: auto;
     width: 100%;
     grid-template-columns: 2fr 3fr 2fr;
-    grid-gap: 5px;
+    grid-gap: 3px;
 }
 .grid-container figure{
     margin-top: 45px;
@@ -148,14 +148,14 @@ form h2{
 }
 form{
     text-align: left;
-    width: 50%;
+    width: 40%;
     margin: auto;
     color: aliceblue;
 }
 form fieldset{
     background-image: url(images/spiration%20dark.png);
     border-radius: 5px;
-    width: 600px;
+    width: 100%;
     margin: auto;
 } 
 
@@ -165,11 +165,14 @@ form fieldset:last-child{
     margin-top: -30px;
     margin-bottom: 5px;
 }
-form input{
+form input:not(input[type="checkbox"]){
+    width: 100%;
     font-family: inherit;
     font-size: 1em;
     margin: 10px auto;
 }
+form textarea{width: 100%;}
+
 form input[type="checkbox"]{
     cursor: pointer;
 }
@@ -193,6 +196,7 @@ form input[type="checkbox"]{
 .pictures{
     display: flex;
     width: 90%;
+    height: auto;
     margin: auto;
 }
 .pictures img{
@@ -205,3 +209,14 @@ form input[type="checkbox"]{
     height: 300px;
     width: inherit;
 }
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .texts {flex-direction: column;}
+  }

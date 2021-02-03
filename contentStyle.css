@@ -138,6 +138,7 @@ figure, .article{
 .figure img {
     box-shadow: 5px 5px 10px black;
     width: 100%;
+    height: auto;
 }
 .figure h4{
     margin: 5px;
@@ -199,6 +200,7 @@ section img{
  
 .tonhig figcaption, .tonhig img{
     width: 100%;
+    height: auto;
 }
 
 #text1{
@@ -230,3 +232,16 @@ footer div{
 footer div p{
     display: inline;
 }
+
+@media only screen and (max-width: 1000px) {
+    .article {
+      flex-direction: column;
+    }
+    .article:last-child {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
