@@ -166,13 +166,14 @@ section img{
 }
 .article{
     display: flex;
-}
-.article figure{
-    border-style: none;
     position: relative;
     padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
     padding-top: 25px;
     height: 0;
+
+}
+.article figure{
+    border-style: none;
 }
 .article iframe{
     position: absolute;
