@@ -153,6 +153,7 @@ figure, .article{
 
 main img{
     height: 400px;
+    object-fit: cover;
 }
 
 /* MYPATH & TONELLA-HIGGINS STYLE */
