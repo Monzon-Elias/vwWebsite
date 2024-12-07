@@ -48,6 +48,7 @@ main{
 }
 
 .grid img{
+    object-fit: cover;
     box-shadow: 5px 5px 10px;
     flex-grow: 1;
     border: 1px solid black;
