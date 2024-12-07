@@ -136,6 +136,7 @@ figure, .article{
     padding: 0 40px 20px 40px; 
 }
 .figure img {
+    object-fit: cover;
     box-shadow: 5px 5px 10px black;
     width: 100%;
     height: auto;
